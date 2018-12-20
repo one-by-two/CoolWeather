@@ -98,7 +98,7 @@ public class WeatherActivity extends AppCompatActivity {
         if(bingPic != null){
             Glide.with(this).load(bingPic).into(bingPicImg);
         }else {
-
+            loadBingPic();
         }
 
         String weatherString = prefs.getString("weather",null);
